@@ -1,0 +1,550 @@
+* {
+  box-sizing:border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("images/paper1.jpg");
+  /*background-repeat: no-repeat;*/
+  background-size: cover;
+}
+
+.container {
+  padding: 14px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 5px;
+}
+
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 5px;
+  background-color: red;
+}
+
+.large-font {
+  font-size: 48px;
+}
+
+.xlarge-font {
+  font-size: 64px
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4CAF50;
+}
+
+.fakeimg {
+  height: 200px;
+  background: #aaa;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .column-66,
+  .column-33 {
+    width: 100%;
+    text-align: center;
+  }
+  img {
+    margin: auto;
+  }
+}
+
+/* small menu icons  */
+/* Style the navigation bar */
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: #000;
+  align-items: center;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: #4CAF50;
+}
+
+/* read more span element to cut text */
+#more {display: none;}
+
+/* collapsible section */
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+/* end of collapsible section */
+
+hr {
+  width:50%;
+  height:2px dotted;
+  color:green;
+}
+
+/* social media icons */
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: #e9ecef;;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: #e9ecef;;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: #e9ecef;;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: #e9ecef;;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: #e9ecef;;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: #e9ecef;;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: #e9ecef;;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: #e9ecef;;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: #e9ecef;;
+}
+
+.fa-android {
+  background: #a4c639;
+  color: #e9ecef;;
+}
+
+.fa-dribbble {
+  background: #ea4c89;
+  color: #e9ecef;;
+}
+
+.fa-vimeo {
+  background: #45bbff;
+  color: #e9ecef;;
+}
+
+.fa-tumblr {
+  background: #2c4762;
+  color: #e9ecef;;
+}
+
+.fa-vine {
+  background: #00b489;
+  color: #e9ecef;;
+}
+
+.fa-foursquare {
+  background: #45bbff;
+  color: #e9ecef;;
+}
+
+.fa-stumbleupon {
+  background: #eb4924;
+  color: #e9ecef;;
+}
+
+.fa-flickr {
+  background: #f40083;
+  color: #e9ecef;;
+}
+
+.fa-yahoo {
+  background: #430297;
+  color:#e9ecef;;
+}
+
+.fa-soundcloud {
+  background: #ff5500;
+  color: #e9ecef;;
+}
+
+.fa-reddit {
+  background: #ff5700;
+  color: #e9ecef;;
+}
+
+.fa-rss {
+  background: #ff6600;
+  color:#e9ecef;;
+}
+
+#globelogo{
+  width:70px;
+  height:70px;
+}
+
+#undernavscroll{
+  font-size:3vw;
+}
+
+#footster{
+  height:30px;
+  padding: 0;
+  text-align: center;
+  vertical-align:middle;
+  margin-bottom: 0;
+  position:fixed;
+  bottom: 0;
+  left: 0;
+  width:100%
+}
+
+/*  .footer {
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: red;
+color: white;
+text-align: center;
+}*/
+
+.topimg{
+  width:335px;
+  height:471px;
+}
+/* nhslogo */
+.nhslogo{
+  background-color: blue;
+  color:white;
+  font-weight:900;
+}
+
+/* button arrows */
+.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+/* end of button arrows */
+/* scrolling tsxt */
+.example1 {
+  height: 60px;
+  overflow: hidden;
+  position: relative;
+}
+.example1 h3 {
+  font-size:24px;
+  color: blue;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 40px;
+  text-align: center;
+  /* Starting position */
+  -moz-transform:translateX(100%);
+  -webkit-transform:translateX(100%);
+  transform:translateX(100%);
+  /* Apply animation to this element */
+  -moz-animation: example1 10s linear infinite;
+  -webkit-animation: example1 10s linear infinite;
+  animation: example1 10s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes example1 {
+  0%   { -moz-transform: translateX(100%); }
+  100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes example1 {
+  0%   { -webkit-transform: translateX(100%); }
+  100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes example1 {
+  0%   {
+    -moz-transform: translateX(100%); /* Firefox bug fix */
+    -webkit-transform: translateX(100%); /* Firefox bug fix */
+    transform: translateX(100%);
+  }
+  100% {
+    -moz-transform: translateX(-100%); /* Firefox bug fix */
+    -webkit-transform: translateX(-100%); /* Firefox bug fix */
+    transform: translateX(-100%);
+  }
+}
+/* socila media icons end */
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+  #sbtn{
+    margin: auto;
+  }
+  .example1 h3
+  {
+    font-size:8vw;
+  }
+}
+
+/* small menu icons end */
+
+/* register form */
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+/* register form end */
+
+
+/* ddddddddddddddddddd */
+/*
+.title {
+font-size: 2em;
+font-weight: 800;
+font-family: 'Lobster', cursive;
+}
+
+.preview-img {
+width: 80%;
+}
+
+.card {
+text-align: center;
+border: none;
+}
+
+#formhead {
+border: 5px solid black;
+padding: 5px;
+}
+
+.newform {
+width: 70%;
+margin: auto;
+margin-top: 10px;
+}
+
+.btn-link {
+color: white;
+text-decoration: none;
+}
+
+#deletebtn {
+display: inline;
+}
+
+/* Simple Article Post CSS */
+/*.artimg {
+float: left;
+width: 30%;
+margin-right: 5%;
+margin-bottom: 2%;
+border: 5px dashed black;
+max-height: 400px;
+}
+
+article {
+margin-bottom: 20%;
+}
+
+
+footer {
+background-color: #f8f9fa;
+text-align: center;
+height: 3rem;
+}
+
+@media only screen and (max-width: 850px) {
+.artimg {
+width: 100%;
+margin: auto;
+margin-bottom: 5%;
+}
+}*/
+
+/* contact me formstyle */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.ssicons{
+  width:50px;
+  height:5  0px;
+}

@@ -1,0 +1,79 @@
+<!-- footer -->
+<div class="jumbotron text-center" id="footster" style="margin-bottom:0;height:90px;">
+  <p style="margin-bottom:0;">Powered by LKMedia 2020  &copy;  LKMedia.  Find us on our social media websites :</p>
+  <div style="background:#e9ecef;">
+    <a href="#" class="ssicons fa fa-reddit"></a>
+    <a href="#" class="ssicons fa fa-linkedin"></a>
+    <a href="#" class="ssicons fa fa-youtube"></a>
+    <a href="#" class="ssicons fa fa-facebook"></a>
+    <a href="#" class="ssicons fa fa-twitter"></a>
+    <a href="#" class="ssicons fa fa-google"></a>
+    <a href="#" class="ssicons fa fa-instagram"></a>
+  </div>
+</div>
+<!-- end of footer -->
+
+<!-- search java script -->
+<!--<script>
+function myFunction() {
+// Declare variables
+var input, filter, ul, li, a, i;
+input = document.getElementById("mySearch");
+filter = input.value.toUpperCase();
+ul = document.getElementById("myMenu");
+li = ul.getElementsByTagName("li");
+
+// Loop through all list items, and hide those who don't match the search query
+for (i = 0; i < li.length; i++) {
+a = li[i].getElementsByTagName("a")[0];
+if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+li[i].style.display = "";
+} else {
+li[i].style.display = "none";
+}
+}
+}
+</script>-->
+<!-- search java script end -->
+
+<!-- read more script -->
+<script type="text/javascript">
+  function myFunction() {
+
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less";
+      moreText.style.display = "inline";
+    }
+  }
+</script>
+<!-- read more script end -->
+<!-- collapsible script -->
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+</script>
+<!-- collapsible script -->
+
+</body>
+</html>

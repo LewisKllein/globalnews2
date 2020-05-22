@@ -1,0 +1,21 @@
+<%- include('templates/header') %>
+
+<div style="margin-left: 2%">
+  <div class="jumbotron">
+    <div class="container text-center">
+      <h1><%= article.title %></h1>
+      <img src="<%= article.image %>" alt="post img" class="artimg">
+      <span class="lead"><%= article.created.toDateString()%></span>
+      <article><p>
+        <%- article.body %>
+      </p>
+    </article>
+  </div>
+  <form class="text-center" action="/latestnews/<%=article._id%>?_method=DELETE" method="POST" id="deletebtn">
+    <button type="submit" class="btn btn-lg btn-danger text-center">Delete</button>
+    <a class="btn btn-lg btn-success text-center" href="/latestnews/<%=article._id%>/edit">Edit Post</a>
+  </form>
+</div>
+</div>
+
+<%- include('templates/footer') %>
